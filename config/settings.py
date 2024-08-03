@@ -171,7 +171,6 @@ CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND")
 #     "block_users_who_was_absent_last_mount": {
 #         "task": "courses.tasks.block_users_who_was_absent_last_mount",
 #         "schedule": timedelta(minutes=1),  # Run every day at 00:00
-#         "kwargs": {"block_absent": True, "timedelta_days": 30}
 #     }
 # }
 CELERY_BEAT_SCHEDULE = "django_celery_beat.schedulers:DatabaseScheduler"
